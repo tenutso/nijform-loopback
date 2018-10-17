@@ -1,0 +1,52 @@
+{
+  "name": "Field",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "formId": {
+      "type": "number",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "sort": {
+      "type": "number"
+    },
+    "options": {
+      "type": "object"
+    },
+    "createAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "form": {
+      "type": "belongsTo",
+      "model": "Form",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

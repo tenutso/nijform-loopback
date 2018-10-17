@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "sqlite": {
+    "name": "sqlite",
+    "connector": "loopback-connector-sqlite3",
+    "file": "./nijform-dev.db",
+    "debug": true
+  }
+}
